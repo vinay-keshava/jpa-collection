@@ -1,11 +1,16 @@
 package com.sample.jpaCollection;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.Table;
 
 @Embeddable
 public class Branch {
+	@Column (name="branchName")
 	private String Brname;
+	@Column (name="studCapacity")
 	private int capacity;
+	@Column (name="FacultyBranch")
 	private int noOfFaculty;
 
 	public String getName() {

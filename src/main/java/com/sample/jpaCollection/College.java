@@ -8,11 +8,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table (name="CollegeTable")
 public class College {
 	@Id
 	@GeneratedValue (strategy = GenerationType.AUTO)
+	
 	private int slNo;
 	private int colCode;
 	private String name;
